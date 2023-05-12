@@ -126,7 +126,7 @@ const Dashboard = () => {
 
         {/* ROW 2 */}
         <Box
-          gridColumn="span 8"
+          gridColumn="span 12"
           gridRow="span 2"
           backgroundColor={colors.primary[400]}
         >
@@ -165,13 +165,13 @@ const Dashboard = () => {
             <LineChart isDashboard={true} />
           </Box>
         </Box>
-        <Box
+        {/* <Box
           gridColumn="span 4"
           gridRow="span 2"
           backgroundColor={colors.primary[400]}
           overflow="auto"
-        >
-          <Box
+        > */}
+          {/* <Box
             display="flex"
             justifyContent="space-between"
             alignItems="center"
@@ -215,8 +215,8 @@ const Dashboard = () => {
               </a>
               </Box>
             </Box>
-          ))}
-        </Box>
+          ))} */}
+        {/* </Box> */}
 
         {/* ROW 3 */}
         <Box
@@ -226,7 +226,7 @@ const Dashboard = () => {
           p="30px"
         >
           <Typography variant="h5" fontWeight="600">
-            Network Taffic Proportion
+            Benign vs DDoS Network Traffic
           </Typography>
           <Box
             display="flex"
@@ -240,9 +240,9 @@ const Dashboard = () => {
               color={colors.greenAccent[500]}
               sx={{ mt: "15px" }}
             >
-              24.76% proportion
+              43.29% Benign
             </Typography>
-            <Typography>In relation to all types of cybersecurity attacks</Typography>
+            <Typography>Proportion of Benign access in our dataset.</Typography>
           </Box>
         </Box>
         <Box
