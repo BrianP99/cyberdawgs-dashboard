@@ -34,6 +34,7 @@ function App() {
             <Topbar setIsSidebar={setIsSidebar} />
             <Routes>
               <Route path="/" element={<Dashboard />} />
+              <Route path="/cyberdawgs-dashboard" element={<Dashboard />} />
               <Route path="/team" element={<Team />} />
               <Route path="/features" element={<Features />} />
               <Route path="/map" element={<Map />} />
