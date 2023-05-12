@@ -15,8 +15,8 @@ const Map = () => {
     plot_bgcolor: colors.primary[400],
     paper_bgcolor: colors.primary[400],
     margin: { l: 20, r: 20, b: 20, t: 20 },
-    width: 1300,
-    height: 700,
+    width: 1000,
+    height: 500,
     autosize: true,
     data: [{
       ...graphData.data[0],

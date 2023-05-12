@@ -8,17 +8,11 @@ const BarChart = ({ isDashboard = false }) => {
   // sort the data array in descending order based on the values
   data.sort((a, b) => b.value - a.value);
 
-  const colors = [
-    theme.palette.primary.main,
-    theme.palette.secondary.main,
-    theme.palette.error.main,
-    theme.palette.warning.main,
-    theme.palette.info.main,
-    theme.palette.success.main,
-  ];
+  const colors = ["#ea5545", "#f46a9b", "#ef9b20", "#edbf33", "#ede15b", "#bdcf32", "#87bc45", "#27aeef", "#b33dc6", "#fdcce5"];
 
   const getColor = (bar) => {
-    return colors[bar.index % colors.length];
+    const color = colors[bar.index % colors.length];
+    return `${color}`; // add 50% opacity to the color
   };
 
   const customTheme = {
