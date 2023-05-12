@@ -21,7 +21,7 @@ return (
    <Box height="75vh">
       <AttackChart />
       <Box m="20px">
-         <Header title="Descriptions of Features" style={{"margin-left": "5px"}}/>
+         <Header title="Descriptions of Attack Types" style={{"margin-left": "5px"}}/>
          <Accordion defaultExpanded style={{"margin-left": "10px"}}>
          <AccordionSummary
          sx={{
