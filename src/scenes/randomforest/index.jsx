@@ -54,34 +54,33 @@ const RandomForest = () => {
               </tr>
               <tr>
                 <td style={{ textAlign: 'left', borderBottom: '1px solid #ccc', padding: '8px' }}>Accuracy</td>
-                <td style={{ textAlign: 'right', borderBottom: '1px solid #ccc', padding: '8px' }}>0.808</td>
+                <td style={{ textAlign: 'right', borderBottom: '1px solid #ccc', padding: '8px' }}>1.000</td>
               </tr>
               <tr>
                 <td style={{ textAlign: 'left', borderBottom: '1px solid #ccc', padding: '8px' }}>Precision</td>
-                <td style={{ textAlign: 'right', borderBottom: '1px solid #ccc', padding: '8px' }}>0.749</td>
+                <td style={{ textAlign: 'right', borderBottom: '1px solid #ccc', padding: '8px' }}>1.000</td>
               </tr>
               <tr>
                 <td style={{ textAlign: 'left', borderBottom: '1px solid #ccc', padding: '8px' }}>Recall</td>
-                <td style={{ textAlign: 'right', borderBottom: '1px solid #ccc', padding: '8px' }}>0.999</td>
+                <td style={{ textAlign: 'right', borderBottom: '1px solid #ccc', padding: '8px' }}>1.000</td>
               </tr>
               <tr>
                 <td style={{ textAlign: 'left', borderBottom: '1px solid #ccc', padding: '8px' }}>F1 score</td>
-                <td style={{ textAlign: 'right', borderBottom: '1px solid #ccc', padding: '8px' }}>0.856</td>
+                <td style={{ textAlign: 'right', borderBottom: '1px solid #ccc', padding: '8px' }}>1.000</td>
               </tr>
               <tr>
                 <td style={{ textAlign: 'left', borderBottom: '1px solid #ccc', padding: '8px' }}>Running time</td>
-                <td style={{ textAlign: 'right', borderBottom: '1px solid #ccc', padding: '8px' }}>0.263 seconds</td>
+                <td style={{ textAlign: 'right', borderBottom: '1px solid #ccc', padding: '8px' }}>30.397 seconds</td>
               </tr>
             </table>
             <Typography color={colors.grey[100]} variant="body1" mt={4}>
-              The table above presents the performance metrics of the model. The model demonstrates an accuracy of 0.808 and an F1 score of 0.856, which indicates a balanced performance between precision and recall. The model also shows a high recall of 0.999, meaning it correctly identifies most of the true positive cases. The running time for the model is 0.263 seconds.
-            </Typography>
+            Despite the overfitting, the performance scores of the random forest model are perfect, with an accuracy, precision, recall, and F1 score of 1.000. This may seem impressive, but it is important to keep in mind that perfect scores can be a red flag for overfitting. The fact that the model's performance is so perfect while its testing score is relatively low suggests that the model is overfitting to the training data.            </Typography>
           </Box>
         </Box>
         <Box display="flex" justifyContent="center" alignItems="center" gap={4}>
           <Box marginLeft={3} pb={2}>
             <Typography color={colors.grey[100]} variant="body1" mt={3} ml={4}>
-              The table above presents the performance metrics of the model. The model demonstrates an accuracy of 0.808 and an F1 score of 0.856, which indicates a balanced performance between precision and recall. The model also shows a high recall of 0.999, meaning it correctly identifies most of the true positive cases. The running time for the model is 0.263 seconds.
+            Based on the learning curve of the random forest model, it is evident that the model is overfitting. The training score is consistently high, but the testing score is much lower, indicating that the model has learned the training data too well and is not generalizing to new data. The training score starts at a near-perfect 0.9999778503793124 and only slightly decreases as the number of data points increases, while the testing score starts much lower at 0.5460984739418371 and does not increase significantly with more data points. This suggests that the model is not able to generalize well to new data points. Overall, while the random forest model has achieved perfect performance scores, it is clear from the learning curve that the model is overfitting. This means that the model may not generalize well to new, unseen data and should be further evaluated before being implemented in a real-world application. It is important to balance model complexity with the amount of data available and to regularly monitor the model's performance on new data to ensure that it is still accurate and reliable.
             </Typography>
           </Box>
         </Box>

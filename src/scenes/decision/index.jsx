@@ -54,34 +54,34 @@ const DecisionTree = () => {
               </tr>
               <tr>
                 <td style={{ textAlign: 'left', borderBottom: '1px solid #ccc', padding: '8px' }}>Accuracy</td>
-                <td style={{ textAlign: 'right', borderBottom: '1px solid #ccc', padding: '8px' }}>0.808</td>
+                <td style={{ textAlign: 'right', borderBottom: '1px solid #ccc', padding: '8px' }}>1.000</td>
               </tr>
               <tr>
                 <td style={{ textAlign: 'left', borderBottom: '1px solid #ccc', padding: '8px' }}>Precision</td>
-                <td style={{ textAlign: 'right', borderBottom: '1px solid #ccc', padding: '8px' }}>0.749</td>
+                <td style={{ textAlign: 'right', borderBottom: '1px solid #ccc', padding: '8px' }}>1.000</td>
               </tr>
               <tr>
                 <td style={{ textAlign: 'left', borderBottom: '1px solid #ccc', padding: '8px' }}>Recall</td>
-                <td style={{ textAlign: 'right', borderBottom: '1px solid #ccc', padding: '8px' }}>0.999</td>
+                <td style={{ textAlign: 'right', borderBottom: '1px solid #ccc', padding: '8px' }}>1.000</td>
               </tr>
               <tr>
                 <td style={{ textAlign: 'left', borderBottom: '1px solid #ccc', padding: '8px' }}>F1 score</td>
-                <td style={{ textAlign: 'right', borderBottom: '1px solid #ccc', padding: '8px' }}>0.856</td>
+                <td style={{ textAlign: 'right', borderBottom: '1px solid #ccc', padding: '8px' }}>1.000</td>
               </tr>
               <tr>
                 <td style={{ textAlign: 'left', borderBottom: '1px solid #ccc', padding: '8px' }}>Running time</td>
-                <td style={{ textAlign: 'right', borderBottom: '1px solid #ccc', padding: '8px' }}>0.263 seconds</td>
+                <td style={{ textAlign: 'right', borderBottom: '1px solid #ccc', padding: '8px' }}>1.207 seconds</td>
               </tr>
             </table>
             <Typography color={colors.grey[100]} variant="body1" mt={4}>
-              The table above presents the performance metrics of the model. The model demonstrates an accuracy of 0.808 and an F1 score of 0.856, which indicates a balanced performance between precision and recall. The model also shows a high recall of 0.999, meaning it correctly identifies most of the true positive cases. The running time for the model is 0.263 seconds.
+            Our decision tree model has achieved perfect scores on all four performance metrics, with an accuracy, precision, recall, and F1 score of 1.000. This is a highly impressive result, suggesting that the decision tree model has learned the patterns and relationships within the data perfectly, without any misclassifications or errors. However, achieving perfect scores on all performance metrics is highly unusual in machine learning, especially in complex datasets. Therefore, it's essential to verify the results to ensure that there are no errors in the implementation or evaluation of the model. In addition to the perfect performance scores, the learning curve of the model also indicates that the testing and training scores converge at a very high level.
             </Typography>
           </Box>
         </Box>
         <Box display="flex" justifyContent="center" alignItems="center" gap={4}>
           <Box marginLeft={3} pb={2}>
             <Typography color={colors.grey[100]} variant="body1" mt={3} ml={4}>
-              The table above presents the performance metrics of the model. The model demonstrates an accuracy of 0.808 and an F1 score of 0.856, which indicates a balanced performance between precision and recall. The model also shows a high recall of 0.999, meaning it correctly identifies most of the true positive cases. The running time for the model is 0.263 seconds.
+            This is further evidence that the model is well-optimized and accurately captures the patterns in the data. Overall, based on the performance metrics and learning curve, the decision tree model appears to be highly accurate and well-optimized for the given dataset. However, it's important to conduct further analysis and verification to ensure that the results are not the result of overfitting or other errors in the model. It's important to note that while the decision tree model has achieved perfect scores on all four performance metrics, there is a risk of overfitting. Overfitting occurs when a model becomes too complex and starts to fit the noise in the data rather than the underlying patterns. In the case of a decision tree model, this can occur when the tree is allowed to grow too deep and becomes overly complex. However, in this case, it's unclear whether the model is overfit or whether it has indeed learned the underlying patterns perfectly. It's possible that the data simply contains clear patterns that the model was able to learn accurately. Nonetheless, it's important to remain cautious and evaluate the model's performance on new, unseen data to ensure that it generalizes well beyond the training data. In addition, it may be worth exploring ways to simplify the model or implement regularization techniques to reduce the risk of overfitting in future iterations.
             </Typography>
           </Box>
         </Box>

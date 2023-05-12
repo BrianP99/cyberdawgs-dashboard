@@ -16,7 +16,7 @@ const colors = tokens(theme.palette.mode);
 return (
 <Box m="20px">
    <Header
-      title="DDoS Attack Types"
+      title="DDoS ATTACK TYPES"
       subtitle="Distribution of DDos Attack Types from Dataset"/>
    <Box height="75vh">
       <AttackChart />

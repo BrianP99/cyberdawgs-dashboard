@@ -54,34 +54,34 @@ const Gaussian = () => {
               </tr>
               <tr>
                 <td style={{ textAlign: 'left', borderBottom: '1px solid #ccc', padding: '8px' }}>Accuracy</td>
-                <td style={{ textAlign: 'right', borderBottom: '1px solid #ccc', padding: '8px' }}>0.808</td>
+                <td style={{ textAlign: 'right', borderBottom: '1px solid #ccc', padding: '8px' }}>0.796</td>
               </tr>
               <tr>
                 <td style={{ textAlign: 'left', borderBottom: '1px solid #ccc', padding: '8px' }}>Precision</td>
-                <td style={{ textAlign: 'right', borderBottom: '1px solid #ccc', padding: '8px' }}>0.749</td>
+                <td style={{ textAlign: 'right', borderBottom: '1px solid #ccc', padding: '8px' }}>0.736</td>
               </tr>
               <tr>
                 <td style={{ textAlign: 'left', borderBottom: '1px solid #ccc', padding: '8px' }}>Recall</td>
-                <td style={{ textAlign: 'right', borderBottom: '1px solid #ccc', padding: '8px' }}>0.999</td>
+                <td style={{ textAlign: 'right', borderBottom: '1px solid #ccc', padding: '8px' }}>1.000</td>
               </tr>
               <tr>
                 <td style={{ textAlign: 'left', borderBottom: '1px solid #ccc', padding: '8px' }}>F1 score</td>
-                <td style={{ textAlign: 'right', borderBottom: '1px solid #ccc', padding: '8px' }}>0.856</td>
+                <td style={{ textAlign: 'right', borderBottom: '1px solid #ccc', padding: '8px' }}>0.848</td>
               </tr>
               <tr>
                 <td style={{ textAlign: 'left', borderBottom: '1px solid #ccc', padding: '8px' }}>Running time</td>
-                <td style={{ textAlign: 'right', borderBottom: '1px solid #ccc', padding: '8px' }}>0.263 seconds</td>
+                <td style={{ textAlign: 'right', borderBottom: '1px solid #ccc', padding: '8px' }}>0.229 seconds</td>
               </tr>
             </table>
             <Typography color={colors.grey[100]} variant="body1" mt={4}>
-              The table above presents the performance metrics of the model. The model demonstrates an accuracy of 0.808 and an F1 score of 0.856, which indicates a balanced performance between precision and recall. The model also shows a high recall of 0.999, meaning it correctly identifies most of the true positive cases. The running time for the model is 0.263 seconds.
+            The k-nearest neighbors model appears to perform very well on the given dataset. The accuracy, precision, and f1 score are all above 0.98, indicating that the model is able to make accurate predictions with a high degree of confidence. The recall score is also very high, indicating that the model is able to correctly identify a large proportion of the positive samples in the dataset. The running time of the model is quite long, at 401.435 seconds, which could be a concern if the dataset is very large or the model needs to be trained multiple times. However, if the model is only being used for occasional predictions, this may not be a significant issue.
             </Typography>
           </Box>
         </Box>
         <Box display="flex" justifyContent="center" alignItems="center" gap={4}>
           <Box marginLeft={3} pb={2}>
             <Typography color={colors.grey[100]} variant="body1" mt={3} ml={4}>
-              The table above presents the performance metrics of the model. The model demonstrates an accuracy of 0.808 and an F1 score of 0.856, which indicates a balanced performance between precision and recall. The model also shows a high recall of 0.999, meaning it correctly identifies most of the true positive cases. The running time for the model is 0.263 seconds.
+            The learning curve analysis showed that the model's training score increased as the size of the training set increased, which is expected. However, the testing score plateaued at around 99% after the training set size reached about 90,000 samples, indicating that the model was not improving significantly with additional training data. This suggests that the KNN model may have reached its limit in terms of what it can learn from the available data. Overall, the learning curve analysis suggests that the KNN model may not benefit significantly from additional training data, while the performance metrics indicate that the model performed well in terms of classification accuracy, precision, recall, and F1 score. However, the slow running time of the model may be a limiting factor in certain applications.
             </Typography>
           </Box>
         </Box>
