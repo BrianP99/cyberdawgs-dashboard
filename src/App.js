@@ -33,8 +33,7 @@ function App() {
           <main className="content">
             <Topbar setIsSidebar={setIsSidebar} />
             <Routes>
-              <Route path="/cyberdawgs-dashboard" element={<Dashboard />} />
-              <Route path="/iBDawgsDashboard" element={<Dashboard />} />
+              <Route path="/" element={<Dashboard />} />
               <Route path="/team" element={<Team />} />
               <Route path="/features" element={<Features />} />
               <Route path="/map" element={<Map />} />
