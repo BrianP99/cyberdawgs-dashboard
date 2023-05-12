@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/cyberdawgs-dashboard/static/css/main.08ca7eda.css",
-    "main.js": "/cyberdawgs-dashboard/static/js/main.1bb6aec8.js",
+    "main.js": "/cyberdawgs-dashboard/static/js/main.f7395ae2.js",
     "index.html": "/cyberdawgs-dashboard/index.html",
     "main.08ca7eda.css.map": "/cyberdawgs-dashboard/static/css/main.08ca7eda.css.map",
-    "main.1bb6aec8.js.map": "/cyberdawgs-dashboard/static/js/main.1bb6aec8.js.map"
+    "main.f7395ae2.js.map": "/cyberdawgs-dashboard/static/js/main.f7395ae2.js.map"
   },
   "entrypoints": [
     "static/css/main.08ca7eda.css",
-    "static/js/main.1bb6aec8.js"
+    "static/js/main.f7395ae2.js"
   ]
 }
