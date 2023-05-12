@@ -12,79 +12,82 @@ const Business = () => {
   const colors = tokens(theme.palette.mode);
   return (
     <Box m="20px">
-      <Header title="BUSINESS PLAN" subtitle="Business Strategy Page" style={{"margin-left": "5px"}}/>
-
-      <Accordion defaultExpanded>
-        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-          <Typography color={colors.greenAccent[500]} variant="h2">
-          Executive Summary:
+      <Header title="BUSINESS PLAN" subtitle="Business Strategy Page" style={{ "margin-left": "5px" }} />
+      <Box
+        display="grid"
+        gridTemplateColumns="repeat(12, 1fr)"
+        gridAutoRows="140px"
+        gap="20px"
+      >
+        <Box gridColumn="span 12">
+          <Typography
+            variant="h4"
+            fontWeight="600"
+            color={colors.grey[100]}
+          >
+            Executive Summary
           </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-          iBDawgs Dashboard is a web-based platform that offers an innovative solution for detecting and analyzing unauthorized access using machine learning algorithms. The dashboard aims to make the digital world a safer place for individuals and organizations by providing cutting-edge cybersecurity solutions. Our skilled team of software developers and cybersecurity analysts are dedicated to developing this powerful and user-friendly platform.
+          <Typography style={{ "margin-left": "10px", "margin-top": "10px" }}>
+            iBDawgs Dashboard is a web-based platform that offers an innovative solution for detecting and analyzing unauthorized access using machine learning algorithms. The dashboard aims to make the digital world a safer place for individuals and organizations by providing cutting-edge cybersecurity solutions. Our skilled team of software developers and cybersecurity analysts are dedicated to developing this powerful and user-friendly platform.
           </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion defaultExpanded>
-        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-          <Typography color={colors.greenAccent[500]} variant="h5">
-            Objectives:
+        </Box>
+        <Box gridColumn="span 12" mb={5}>
+          <Typography
+            variant="h4"
+            fontWeight="600"
+            color={colors.grey[100]}
+          >
+            Objectives
           </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-          - To provide an intuitive and effective solution for detecting and analyzing unauthorized access. <br/>
-          - To establish iBDawgs as a leader in machine learning solutions for cybersecurity. <br/>
-          - To generate revenue through premium features, targeted advertising, and strategic partnerships.
+          <Typography style={{ "margin-left": "10px", "margin-top": "10px" }}>
+            - Develop and deploy an industry-leading solution for detecting and analyzing unauthorized access that meets customer needs. <br />
+            - Establish iBDawgs as a top provider of machine learning solutions for cybersecurity, leveraging our technology and expertise to drive industry growth. <br />
+            - Generate revenue through premium features, strategic partnerships, and targeted advertising to maximize ROI and enhance brand awareness.
           </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion defaultExpanded>
-        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-          <Typography color={colors.greenAccent[500]} variant="h5">
-            Market Analysis:
+        </Box>
+        <Box gridColumn="span 12" mb={3}>
+          <Typography
+            variant="h4"
+            fontWeight="600"
+            color={colors.grey[100]}
+          >
+            Revenue Model
           </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-          - Target Market: Individuals and organizations in need of cybersecurity solutions for web-based service      applications.<br/>
-          - Market Size: The global cybersecurity market is expected to grow steadily as the demand for protection against cyber threats increases.<br/>
-          - Competitors: Other cybersecurity service providers and software developers offering similar solutions.
-
+          <Typography style={{ "margin-left": "10px", "margin-top": "10px" }}>
+            - Freemium Model: Offer basic functionality for free, while providing premium features to paying subscribers.<br />
+            - Targeted Advertising: Display targeted ads to users based on their interests and browsing behavior.<br />
+            - Strategic Partnerships: Generate revenue through collaborations with other organizations in the cybersecurity and technology sectors.
           </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion defaultExpanded>
-        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-          <Typography color={colors.greenAccent[500]} variant="h5">
-          Marketing Strategy:
+        </Box>
+        <Box gridColumn="span 12" mb={3}>
+          <Typography
+            variant="h4"
+            fontWeight="600"
+            color={colors.grey[100]}
+          >
+            Market Analysis
           </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-          - Online Marketing: Utilize search engine optimization (SEO), social media advertising, and content marketing to raise awareness and drive traffic to iBDawgs Dashboard.<br/>
-          - Strategic Partnerships: Establish partnerships with other organizations in the cybersecurity and technology sectors to expand our reach and improve our offerings.<br/>
-          - Trade Shows & Conferences: Participate in relevant industry events to showcase our product, network with potential clients and partners, and stay informed on the latest trends and developments in cybersecurity and machine learning.
-
+          <Typography style={{ "margin-left": "10px", "margin-top": "10px" }}>
+            - Target Market: Individuals and organizations in need of cybersecurity solutions for web-based service      applications.<br />
+            - Market Size: The global cybersecurity market is expected to grow steadily as the demand for protection against cyber threats increases.<br />
+            - Competitors: Other cybersecurity service providers and software developers offering similar solutions.
           </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion defaultExpanded>
-        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-          <Typography color={colors.greenAccent[500]} variant="h5">
-          Revenue Model:
+        </Box>
+        <Box gridColumn="span 12" mb={3}>
+          <Typography
+            variant="h4"
+            fontWeight="600"
+            color={colors.grey[100]}
+          >
+            Marketing Strategy
           </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-          - Freemium Model: Offer basic functionality for free, while providing premium features to paying subscribers.<br/>
-          - Targeted Advertising: Display targeted ads to users based on their interests and browsing behavior.<br/>
-          - Strategic Partnerships: Generate revenue through collaborations with other organizations in the cybersecurity and technology sectors.
-
+          <Typography style={{ "margin-left": "10px", "margin-top": "10px" }}>
+            - Online Marketing: Utilize search engine optimization (SEO), social media advertising, and content marketing to raise awareness and drive traffic to iBDawgs Dashboard.<br />
+            - Strategic Partnerships: Establish partnerships with other organizations in the cybersecurity and technology sectors to expand our reach and improve our offerings.<br />
+            - Trade Shows & Conferences: Participate in relevant industry events to showcase our product, network with potential clients and partners, and stay informed on the latest trends and developments in cybersecurity and machine learning.
           </Typography>
-        </AccordionDetails>
-      </Accordion>
+        </Box>
+      </Box>
     </Box>
   );
 };
