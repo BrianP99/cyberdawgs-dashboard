@@ -19,6 +19,7 @@ import { ColorModeContext, useMode } from "./theme";
 import Calendar from "./scenes/calendar/calendar";
 import Bar from "./scenes/top10";
 import AttackType from "./scenes/attacktype";
+import Home from "./scenes/home";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -33,8 +34,9 @@ function App() {
           <main className="content">
             <Topbar setIsSidebar={setIsSidebar} />
             <Routes>
-              <Route path="/" element={<Dashboard />} />
-              <Route path="/cyberdawgs-dashboard" element={<Dashboard />} />
+              <Route path="/" element={<Home />} />
+              <Route path="/cyberdawgs-dashboard" element={<Home />} />
+              <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/team" element={<Team />} />
               <Route path="/features" element={<Features />} />
               <Route path="/map" element={<Map />} />

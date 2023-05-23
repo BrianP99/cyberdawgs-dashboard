@@ -16,6 +16,7 @@ import PetsIcon from '@mui/icons-material/Pets';
 import NextWeekIcon from '@mui/icons-material/NextWeek';
 import MapIcon from '@mui/icons-material/Map';
 import CoronavirusIcon from '@mui/icons-material/Coronavirus';
+import HomeIcon from '@mui/icons-material/Home';
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
   const theme = useTheme();
@@ -39,7 +40,7 @@ const Sidebar = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   const [isCollapsed, setIsCollapsed] = useState(false);
-  const [selected, setSelected] = useState("Dashboard");
+  const [selected, setSelected] = useState("Home");
 
   return (
     <Box
@@ -109,8 +110,16 @@ const Sidebar = () => {
 
           <Box paddingLeft={isCollapsed ? undefined : "10%"}>
             <Item
-              title="Dashboard"
+              title="Home"
               to="/"
+              icon={<HomeIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            
+            <Item
+              title="Dashboard"
+              to="/dashboard"
               icon={<PetsIcon />}
               selected={selected}
               setSelected={setSelected}

@@ -15,8 +15,8 @@ const Map = () => {
     plot_bgcolor: colors.primary[400],
     paper_bgcolor: colors.primary[400],
     margin: { l: 0, r: 30, b: 5, t: 5 },
-    width: 400,
-    height: 200,
+    width: 330,
+    height: 220,
     autosize: true,
     data: [{
       ...graphData.data[0],
@@ -28,7 +28,7 @@ const Map = () => {
   };
 
   return (
-    <Box m="20px">
+    <Box >
       <Plot data={graphData.data} layout={plotLayout} />
     </Box>
   );
